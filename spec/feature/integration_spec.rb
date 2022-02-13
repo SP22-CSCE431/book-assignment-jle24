@@ -2,7 +2,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Creating a book', type: :feature do
-  scenario 'valid title inputs' do
+  scenario 'valid inputs' do
     visit new_book_path
     fill_in 'Title', with: 'harry potter'
     fill_in 'Author', with: 'J.K Rowling'
