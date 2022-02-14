@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :users_books
   resources :users
-  root 'books#index'
+  root 'users_books#index'
   resources :books do
    member do 
      get :delete
